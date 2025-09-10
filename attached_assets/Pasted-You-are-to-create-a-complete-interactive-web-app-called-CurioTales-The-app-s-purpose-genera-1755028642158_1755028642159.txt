@@ -1,0 +1,57 @@
+You are to create a complete interactive web app called **CurioTales**.  
+The app’s purpose: generate short, fascinating, and unusual facts or stories about any topic, packaged in an attractive, easy-to-browse UI.
+
+---
+## UI REQUIREMENTS
+1. **Theme & Style**
+   - Clean, modern layout with playful but professional colors.
+   - Rounded cards, soft shadows, ample spacing.
+   - Mobile-friendly responsive design.
+
+2. **Header**
+   - Display "CurioTales" prominently at the top with a small tagline: "Bite-sized wonders from every corner of knowledge."
+   - Include subtle background illustration or pattern that conveys curiosity/discovery.
+
+3. **Tags Section**
+   - A horizontal row of clickable tags (chips/pills) with common categories such as:
+     - Science
+     - History
+     - Technology
+     - Nature
+     - Space
+     - Arts
+     - Culture
+     - Random
+   - Clicking a tag instantly filters/generates relevant stories in that category.
+
+4. **Search Bar**
+   - Search bar positioned below the tags row.
+   - Default placeholder text:
+     "Narrow down on any of the specific topics you want, or just type a topic."
+   - User can type a topic and press enter or click search to generate relevant facts/stories.
+
+5. **Content Display**
+   - Grid or list of cards containing:
+     - Story/fact title
+     - Short 2–3 sentence fact/story (50–70 words max)
+     - Optional small illustration or icon per card (AI-generated or stock illustration style)
+   - Infinite scroll or “Load More” button.
+
+6. **Interaction**
+   - Each time the user clicks a tag, enters a search, or refreshes, generate 5–8 new entries.
+   - Smooth fade-in animation for new content.
+   - No reloading the entire page.
+
+---
+## FUNCTIONAL BEHAVIOR
+When the user provides a topic (either via search or tag click):
+- The app requests from the AI agent 5–8 engaging, unusual, and *share-worthy* facts or micro-stories.
+- These must be factual, intriguing, and worded in a friendly, clear tone.
+- Avoid generic, obvious facts. Prioritize surprising or little-known details.
+- Keep each entry to a max of ~70 words.
+- If a fact could be made visually engaging, suggest a small, fitting icon or illustration idea in metadata.
+
+---
+## AI GENERATION INSTRUCTIONS
+**Input from User:** Topic, category, or keyword(s).  
+**Output Format (JSON):**
