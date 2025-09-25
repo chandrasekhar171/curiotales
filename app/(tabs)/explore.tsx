@@ -24,7 +24,7 @@ export default function AboutScreen() {
       
       <ThemedText style={styles.description}>
         CurioTales brings you fascinating, bite-sized facts and stories from every corner of human knowledge.
-        Discover the unexpected, the surprising, and the wonderfully weird.
+        Discover the unexpected, the surprising, and the wonderfully weird - all generated live by AI based on your interests and age!
       </ThemedText>
 
       <Collapsible title="How it works">
@@ -35,7 +35,7 @@ export default function AboutScreen() {
           • Search for specific topics that interest you
         </ThemedText>
         <ThemedText>
-          • Generate fresh stories with the ✨ Generate New Stories button
+          • Generate fresh stories with AI using the 🤖 Generate New AI Story button
         </ThemedText>
         <ThemedText>
           • Each story is crafted to be surprising and share-worthy
@@ -63,14 +63,29 @@ export default function AboutScreen() {
         </ThemedText>
       </Collapsible>
 
+      <Collapsible title="AI-Powered Stories">
+        <ThemedText>
+          <ThemedText type="defaultSemiBold">Live Generation:</ThemedText> Every story is generated fresh by AI based on your selected topic and age range
+        </ThemedText>
+        <ThemedText>
+          <ThemedText type="defaultSemiBold">Age-Appropriate:</ThemedText> Content is automatically tailored to your child's reading level and comprehension
+        </ThemedText>
+        <ThemedText>
+          <ThemedText type="defaultSemiBold">Always Unique:</ThemedText> No two stories are ever the same - each generation creates something new and exciting
+        </ThemedText>
+        <ThemedText>
+          <ThemedText type="defaultSemiBold">Free to Use:</ThemedText> Powered by free LLM APIs, so you can generate unlimited stories without any cost
+        </ThemedText>
+      </Collapsible>
+
       <Collapsible title="Why CurioTales?">
         <ThemedText>
           In a world of information overload, CurioTales curates knowledge into digestible, 
           delightful nuggets that spark curiosity and make great conversation starters.
         </ThemedText>
         <ThemedText>
-          Every fact is verified, every story is crafted to surprise, and every discovery 
-          is an invitation to learn more about our fascinating world.
+          Every story is crafted to surprise, every discovery is personalized to your interests, 
+          and every generation is an invitation to learn more about our fascinating world.
         </ThemedText>
       </Collapsible>
 
